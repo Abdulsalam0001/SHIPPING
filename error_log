@@ -1,0 +1,76 @@
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 9
+[15-Aug-2020 12:08:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 9
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 9
+[15-Aug-2020 12:10:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 9
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 6
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 7
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 8
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Undefined variable: _post in /home/dapostud/public_html/mail.php on line 9
+[15-Aug-2020 21:26:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/dapostud/public_html/mail.php on line 9
+[28-Aug-2020 15:03:56 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[28-Aug-2020 15:03:56 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[28-Aug-2020 15:03:56 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[28-Aug-2020 15:03:56 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[31-Aug-2020 14:41:52 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[31-Aug-2020 14:41:52 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[31-Aug-2020 14:41:52 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[31-Aug-2020 14:41:52 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[10-Sep-2020 22:30:12 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[10-Sep-2020 22:30:12 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[10-Sep-2020 22:30:12 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[10-Sep-2020 22:30:12 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[14-Sep-2020 05:30:36 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[14-Sep-2020 05:30:36 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[14-Sep-2020 05:30:36 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[14-Sep-2020 05:30:36 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[16-Sep-2020 13:21:36 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[16-Sep-2020 13:21:36 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[16-Sep-2020 13:21:36 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[16-Sep-2020 13:21:36 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[17-Sep-2020 13:27:31 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[17-Sep-2020 13:27:31 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[17-Sep-2020 13:27:31 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[17-Sep-2020 13:27:31 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[19-Sep-2020 19:04:02 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[19-Sep-2020 19:04:02 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[19-Sep-2020 19:04:02 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[19-Sep-2020 19:04:02 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[02-Oct-2020 12:38:12 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[02-Oct-2020 12:38:12 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[02-Oct-2020 12:38:12 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[02-Oct-2020 12:38:12 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[05-Oct-2020 14:12:55 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[05-Oct-2020 14:12:55 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[05-Oct-2020 14:12:55 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[05-Oct-2020 14:12:55 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[07-Oct-2020 18:50:03 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[07-Oct-2020 18:50:03 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[07-Oct-2020 18:50:03 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[07-Oct-2020 18:50:03 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[22-Oct-2020 02:55:44 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[22-Oct-2020 02:55:44 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[22-Oct-2020 02:55:44 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[22-Oct-2020 02:55:44 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[05-Nov-2020 15:37:18 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[05-Nov-2020 15:37:18 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[05-Nov-2020 15:37:18 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[05-Nov-2020 15:37:18 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
+[08-Nov-2020 14:55:01 UTC] PHP Notice:  Undefined index: EM in /home/dapostud/public_html/mail.php on line 4
+[08-Nov-2020 14:55:01 UTC] PHP Notice:  Undefined index: EMA in /home/dapostud/public_html/mail.php on line 5
+[08-Nov-2020 14:55:01 UTC] PHP Notice:  Undefined index: EMAI in /home/dapostud/public_html/mail.php on line 6
+[08-Nov-2020 14:55:01 UTC] PHP Notice:  Undefined index: EMAIL in /home/dapostud/public_html/mail.php on line 7
