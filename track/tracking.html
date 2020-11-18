@@ -7,6 +7,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/favicon.png">
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
@@ -72,17 +73,19 @@
           <div class="row mb-5">
             <div class="block-heading-1 col-12 text-center">
                 <h6></h6>
-                <img src="../img/core-img/favicon.png" class="fluid">   <h2>SHIPPING INFORMATION </h2>             
+                <img src="../img/core-img/favicon.png" class="fluid">   <h2>PACKAGE INFORMATION </h2>             
                 <table>
                     <tbody><tr>
+                      <th><b>SENDER'S NAME</b></th>
                       <th><b>SENDER'S ADDRESS</b></th>
                       <th><b>RECIEVER'S ADDRESS</b></th>
                       <th><b>RECIEVER'S NAME</b></th> 
  
                     </tr>
                     <tr>
-                      <td><? echo $_SESSION['sendera'];?> </td>
-                      <td><?php echo $_SESSION['name'] ;?> </td>
+                      <td>Jimmy McCormack </td>
+                      <td>TEAM PRUETT CALIFORNIA BRANCH</td>
+                      <td>Louisville,Kentucky 40223</td>
                       <td>Charles Scudder </td>
 
                     </tr>
@@ -94,44 +97,37 @@
 
           <div class="block-heading-1 col-12 text-center">
 
-          <h2>DESCRIPTION</h2>
+          <h2>SHIPPING INFORMATION</h2>
           <table>
             <tbody><tr>
-              <th><b>DESCRIPTION</b></th>
-              <th><b>PACKAGE</b></th> 
+              <th><b>SHIPPING TIME</b></th>
+              <th><b>PACKAGE ID</b></th> 
               <th><b>STATUS</b></th> 
             </tr>
             <tr>
-              <td><? echo $_SESSION['sendera'];?></td>
-              <td>305</td>
-              <td>pending</td>
+              <td>3-5 DAYS</td>
+              <td>3053OUWROWU1</td>
+              <td>ENROUTE</td>
             </tr>
             <tr>
-              <td>DESTINATION</td>
-              <td>CARRIER</td>
-              <td>SHIPMENT TYPE</td>
+              <td><b>DESTINATION</B></td>
+           <td><b>DISTANCE</B></td>
+         <td><b>WEIGHT</B></td>
+
             </tr>
             <tr>
               <td><? ECHO $_SESSION['investment'];?> </td>
               <td>DHL</td>
-              <td>Air frieght</td>
+              <td> LESS THAN 1000kg </td>
             </tr>   <tr>
-                <td>PAYMENT TYPE</td>
-                <td> DELIVERY DATE/TIME </td>
-                <td>PICKUP DATE/Time</td>
+                <td><b>PAYMENT TYPE</b></td>
+                <td> <b>HOME DELIVERY</b></td>
+                <td><b>INSURANCE</b></td>
               </tr> <tr>
-                <td>DIRECT DEPOSIT</td>
-                <td><? ECHO $_SESSION['sendern']; ?></td>
-                <td><? ECHO $_SESSION['lname']; ?></td>
-              </tr>   <tr>
-                <td>WEIGHT(KG)</td>
-                <td>CARRIER REF NO.</td>
-                <td>COMMENTS</td>
-              </tr> <tr>
-                <td> <? ECHO $_SESSION['senderc']; ?> </td>
-                <td>2963R9767326R</td>
-                <td><? echo $_SESSION['contactno'];?> </td>
-              </tr>
+                <td>CASH</td>
+                <td>ENABLED</td>
+                <td><b>PAID</b></td>
+              </tr> 
           </tbody></table></div></div>
           <label for="file">Shipping procress:</label>
           <progress id="file" value="50" max="100">Shipping items </progress>
@@ -139,7 +135,7 @@
                              <? ECHO $_SESSION{'details'} ;?> </div>
 <p>You are yet to pay the sum of <? echo $_SESSION['curl'];?></p>
               <button onclick="window.print()">Print this page</button>
-            <p><a  href="logout.php" class="btn btn-primary btn-large">Go Home</a>
+            <p><a  href="../../index.html" class="btn btn-primary btn-large">Go Home</a>
 </p>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
