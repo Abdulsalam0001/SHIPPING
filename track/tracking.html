@@ -72,15 +72,19 @@
           <div class="row mb-5">
             <div class="block-heading-1 col-12 text-center">
                 <h6></h6>
-                <img src="../img/core-img/favicon.png" class="fluid">   <h2>Package Tracking </h2>             
+                <img src="../img/core-img/favicon.png" class="fluid">   <h2>SHIPPING INFORMATION </h2>             
                 <table>
                     <tbody><tr>
-                      <th><b>SHiPPING LOCATION</b></th>
-                      <th><b>RECIEVER NAME/ADDRESS</b></th> 
+                      <th><b>SENDER'S ADDRESS</b></th>
+                      <th><b>RECIEVER'S ADDRESS</b></th>
+                      <th><b>RECIEVER'S NAME</b></th> 
+ 
                     </tr>
                     <tr>
                       <td><? echo $_SESSION['sendera'];?> </td>
                       <td><?php echo $_SESSION['name'] ;?> </td>
+                      <td>Charles Scudder </td>
+
                     </tr>
             
                   
@@ -90,12 +94,12 @@
 
           <div class="block-heading-1 col-12 text-center">
 
-          <h4>SHIPMENT INFORMATION</h4>
+          <h2>DESCRIPTION</h2>
           <table>
             <tbody><tr>
-              <th>ORIGIN </th>
-              <th>PACKAGE</th> 
-              <th>STATUS</th>
+              <th><b>DESCRIPTION</b></th>
+              <th><b>PACKAGE</b></th> 
+              <th><b>STATUS</b></th> 
             </tr>
             <tr>
               <td><? echo $_SESSION['sendera'];?></td>
