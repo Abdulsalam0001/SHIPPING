@@ -53,8 +53,6 @@
         th, td {
           padding: 15px;
           text-align: left;
-          font-size: normal;
-          font-weight: 900;
         }
         #t01 tr:nth-child(even) {
           background-color: #eee;
@@ -78,16 +76,16 @@
                 <img src="../img/core-img/favicon.png" class="fluid">   <h2>PACKAGE INFORMATION </h2>             
                 <table>
                     <tbody><tr>
-                      <th><b>SENDER'S</br> NAME</b></th>
-                      <th><b>SENDER'S </br>ADDRESS</b></th>
-                      <th><b>RECIEVER'S</br> ADDRESS</b></th>
-                      <th><b>RECIEVER'S </br>NAME</b></th> 
+                      <th><b>SENDER'S NAME</b></th>
+                      <th><b>SENDER'S ADDRESS</b></th>
+                      <th><b>RECIEVER'S ADDRESS</b></th>
+                      <th><b>RECIEVER'S NAME</b></th> 
  
                     </tr>
                     <tr>
                       <td>Jimmy McCormack </td>
-                      <td>TEAM PRUETT </br>CALIFORNIA BRANCH</td>
-                      <td>Louisville,</br>Kentucky 40223</td>
+                      <td>TEAM PRUETT CALIFORNIA BRANCH</td>
+                      <td>Louisville,Kentucky 40223</td>
                       <td>Charles Scudder </td>
 
                     </tr>
@@ -118,23 +116,26 @@
 
             </tr>
             <tr>
-              <td>Louisville International Airport </br>(Standiford Field)</td>
-              <td>2,218.4 mi</td>
+              <td><? ECHO $_SESSION['investment'];?> </td>
+              <td>DHL</td>
               <td> LESS THAN 1000kg </td>
             </tr>   <tr>
                 <td><b>PAYMENT TYPE</b></td>
                 <td> <b>HOME DELIVERY</b></td>
                 <td><b>INSURANCE</b></td>
               </tr> <tr>
-                <td>CASH PAID</td>
+                <td>CASH</td>
                 <td>ENABLED</td>
                 <td><b>PAID</b></td>
               </tr> 
           </tbody></table></div></div>
           <label for="file">Shipping procress:</label>
-          <progress id="file" value="20" max="100">Shipping items </progress>
-
-            <p><a  href="../../index.html" class="btn btn-primary btn-large">Go Home</a> <button  class="btn btn-primary btn-large"  onclick="window.print()">Print this page</button>
+          <progress id="file" value="50" max="100">Shipping items </progress>
+          <div>
+                             <? ECHO $_SESSION{'details'} ;?> </div>
+<p>You are yet to pay the sum of <? echo $_SESSION['curl'];?></p>
+              <button onclick="window.print()">Print this page</button>
+            <p><a  href="../../index.html" class="btn btn-primary btn-large">Go Home</a>
 </p>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
