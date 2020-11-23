@@ -30,7 +30,7 @@
     <script language="javascript">
       function check(form)/*function to check userid & password*/ {
         /*the following code checkes whether the entered userid and password are matching*/
-        if (form.pass.value == "010154788640") {
+        if (form.pass.value == "X9205 5626 1129") {
           location.href = "tracking.html";
           event.preventDefault();
     
@@ -125,7 +125,7 @@
                 <p class="mb-5">Use Secure Code to Track Package in real time Easily with Rocket Delivery Service private networks </p>
 							<form name="tracking" action="" method="post">
                   <div class="form-group d-flex">
-                    <input type="number" class="form-control" placeholder="Your tracking number" name="pass" >
+                    <input type="text" class="form-control" placeholder="Your tracking number" name="pass" >
                     <input type="submit" class="btn btn-primary text-white px-4" value="Track Now" name="login" onclick="check(this.form)">
                   </div>
                 </form>
