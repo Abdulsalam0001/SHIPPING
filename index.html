@@ -1,49 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Fast Shipper - Delivery 
- Service</title>
+<head>
+  <title>Fast Shipper - Delivery Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="icon" href="../img/favicon.png">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <script language="javascript">
-      function check(form)/*function to check userid & password*/ {
-        /*the following code checkes whether the entered userid and password are matching*/
-        if (form.pass.value == "43063378") {
-          location.href = "tracking.html";
-          event.preventDefault();
-    
-          /*opens the target page while Id & password matches*/
-        }
-        else {
-          alert("Invalid Tracking Number ")/*displays error message*/
-          event.preventDefault();
-          return false;
-        }
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap" id="home-section">
+    <script>
+    function check(form) {
+      if (form.pass.value === "43063378") {
+        location.href = "tracking.html";
+      } else if (form.pass.value === "anotherTrackingNumber") {
+        location.href = "processingtracing.html";
+      } else {
+        alert("Invalid Tracking Number");
       }
-    
-    </script>
+      return false;
+    }
+  </script>
 
     <div class="site-wrap" id="home-section">
 
