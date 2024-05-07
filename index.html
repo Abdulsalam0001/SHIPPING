@@ -19,20 +19,19 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap" id="home-section">
-<script>
+    <script>
       function check(form) {
         var trackingNumber = form.pass.value;
         if (trackingNumber === "43063378") {
-          window.location.href = "tracking.html";
+          window.location.replace("tracking.html");
         } else if (trackingNumber === "JJD1234567890123") {
-          window.location.href = "processingtracing.html";
+          window.location.replace("processingtracing.html");
         } else {
           alert("Invalid Tracking Number");
         }
         return false;
       }
     </script>
-
 
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
