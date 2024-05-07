@@ -19,20 +19,22 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap" id="home-section">
-    <script>
-      function check(form) {
-        var trackingNumber = form.pass.value;
-        if (trackingNumber === "43063378") {
-          window.location.replace("tracking.html");
-        } else if (trackingNumber === "JJD1234567890123") {
-          window.location.replace("processingtracing.html");
+    <script language="javascript">
+      function check(form) /*function to check userid & password*/ {
+        /*the following code checks whether the entered userid and password are matching*/
+        if (form.pass.value === "010154788640") {
+          location.href = "tracking.html";
+          event.preventDefault(); // Prevents the default form submission
+        } else if (form.pass.value === "43063378") {
+          location.href = "tracking2.html";
+          event.preventDefault(); // Prevents the default form submission
         } else {
-          alert("Invalid Tracking Number");
+          alert("Invalid Tracking Number") /*displays error message*/
+          event.preventDefault(); // Prevents the default form submission
+          return false;
         }
-        return false;
       }
     </script>
-
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
           <div class="site-mobile-menu-close mt-3">
@@ -108,12 +110,12 @@
               <div class="col-lg-6">
                 <h1>Speed &amp;Reliablity</h1>
                 <p class="mb-5">Use Secure Code to Track Package in real time Easily with our fast delivery networks </p>
-<form name="tracking">
-      <div class="form-group d-flex">
-        <input type="text" class="form-control" placeholder="Your tracking number" name="pass">
-        <input type="submit" class="btn btn-primary text-white px-4" value="Track Now" name="login" onclick="return check(this.form)">
-      </div>
-    </form>
+                <form name="tracking" action="" method="post">
+                  <div class="form-group d-flex">
+                    <input type="number" class="form-control" placeholder="Your tracking number" name="pass" >
+                    <input type="submit" class="btn btn-primary text-white px-4" value="Track Now" name="login" onclick="check(this.form)">
+                  </div>
+                </form>
               </div>
             </div>
           </div>
