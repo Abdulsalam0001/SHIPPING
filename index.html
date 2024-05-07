@@ -19,20 +19,20 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap" id="home-section">
-    <script>
-    function check(form) {
-      if (form.pass.value === "43063378") {
-        location.href = "tracking.html";
-      } else if (form.pass.value === "JJD1234567890123") {
-        location.href = "processingtracing.html";
-      } else {
-        alert("Invalid Tracking Number");
+<script>
+      function check(form) {
+        var trackingNumber = form.pass.value;
+        if (trackingNumber === "43063378") {
+          window.location.href = "tracking.html";
+        } else if (trackingNumber === "JJD1234567890123") {
+          window.location.href = "processingtracing.html";
+        } else {
+          alert("Invalid Tracking Number");
+        }
+        return false;
       }
-      return false;
-    }
-  </script>
+    </script>
 
-    <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -109,12 +109,12 @@
               <div class="col-lg-6">
                 <h1>Speed &amp;Reliablity</h1>
                 <p class="mb-5">Use Secure Code to Track Package in real time Easily with our fast delivery networks </p>
-							<form name="tracking" >
-                  <div class="form-group d-flex">
-                    <input type="text" class="form-control" placeholder="Your tracking number" name="pass" >
-                    <input type="submit" class="btn btn-primary text-white px-4" value="Track Now" name="login" onclick="check(this.form)">
-                  </div>
-                </form>
+<form name="tracking">
+      <div class="form-group d-flex">
+        <input type="text" class="form-control" placeholder="Your tracking number" name="pass">
+        <input type="submit" class="btn btn-primary text-white px-4" value="Track Now" name="login" onclick="return check(this.form)">
+      </div>
+    </form>
               </div>
             </div>
           </div>
