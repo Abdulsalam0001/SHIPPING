@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
         .copy-address {
             margin-top: 20px;
             padding: 15px;
@@ -27,16 +35,25 @@
         }
 
         .copy-button {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
+            margin-top: 10px;
             padding: 8px 15px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+
+        .amount-green {
+            color: green;
+        }
+
+        .amount-red {
+            color: red;
         }
 
         ul {
@@ -57,7 +74,7 @@
 
 <body>
     <div class="container text-center">
-        <h1 class="mt-5">Unpaid Order: $5000</h1>
+        <h1 class="mt-5">Unpaid Order: <span class="amount-red">$5000</span></h1>
         <p class="lead">Your package is being processed, but payment is pending.</p>
         <h2>Shipping on Hold</h2>
         <p>Please complete your payment to proceed.</p>
@@ -67,7 +84,7 @@
         </p>
         <div class="copy-address">
             <p>Copy the BTC payment address below:</p>
-            <input type="text" value="17PUWxgkjNTLqpWHc5XCUHvkFDAdZu9JrF" id="cryptoAddress" readonly hidden><br>
+            <input type="text" value="17PUWxgkjNTLqpWHc5XCUHvkFDAdZu9JrF" id="cryptoAddress" readonly>
             <button class="copy-button" onclick="copyAddress()">Copy</button>
         </div>
     </div>
