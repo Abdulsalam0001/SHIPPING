@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
     <style>
         .container {
             display: flex;
@@ -80,7 +81,7 @@
         <p>Please complete your payment to proceed.</p>
         <p>Copy the payment address before proceeding to our <a href="https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000">payment server</a>:</p>
         <p>
-            <button type="button" onclick="window.location.href='https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000'">Pay Now!</button>
+            <button type="button" onclick="showPayNowAlert()">Pay Now!</button>
         </p>
         <div class="copy-address">
             <p>Copy the BTC payment address below:</p>
@@ -104,12 +105,33 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         function copyAddress() {
             var copyText = document.getElementById("cryptoAddress");
             copyText.select();
             document.execCommand("copy");
-            alert("Address copied to clipboard: " + copyText.value);
+            Swal.fire({
+                icon: 'success',
+                title: 'Copied!',
+                text: 'Address copied to clipboard: ' + copyText.value,
+                confirmButtonText: 'Okay'
+            });
+        }
+
+        function showPayNowAlert() {
+            Swal.fire({
+                title: 'Pay Now!',
+                text: 'Redirecting you to make the payment...',
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, pay now!',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = 'https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000';
+                }
+            });
         }
     </script>
 </body>
