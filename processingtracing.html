@@ -81,7 +81,8 @@
         <p>Please complete your payment to proceed.</p>
         <p>Copy the payment address before proceeding to our <a href="https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000">payment server</a>:</p>
         <p>
-            <button type="button" onclick="showPayNowAlert()">Pay Now!</button>
+            <button type="button" onclick="showPayNowAlert('https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000')">Pay Now!</button>
+            <button type="button" onclick="showPayNowAlert('https://switchere.com/')">Alternative Payment</button>
         </p>
         <div class="copy-address">
             <p>Copy the BTC payment address below:</p>
@@ -119,17 +120,17 @@
             });
         }
 
-        function showPayNowAlert() {
+        function showPayNowAlert(paymentLink) {
             Swal.fire({
-                title: 'Pay Now!',
-                text: 'Redirecting you to make the payment...',
-                icon: 'info',
+                title: 'SHIPPING INVOICE !',
+                text: 'Proceed to pay shipping invoice and make sure you copied the payment address',
+                icon: 'success',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, pay now!',
+                confirmButtonText: 'Yes, proceed !',
                 cancelButtonText: 'Cancel'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = 'https://changenow.io/?from=usd&to=btc&fiatMode=true&amount=5000';
+                    window.location.href = paymentLink;
                 }
             });
         }
