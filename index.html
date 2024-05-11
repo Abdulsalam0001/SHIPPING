@@ -19,22 +19,25 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap" id="home-section">
-    <script language="javascript">
-      function check(form) /*function to check userid & password*/ {
-        /*the following code checks whether the entered userid and password are matching*/
-        if (form.pass.value === "010154788640") {
-          location.href = "tracking.html";
-          event.preventDefault(); // Prevents the default form submission
-        } else if (form.pass.value === "JJD1234567890123") {
-          location.href = "processingtracing.html";
-          event.preventDefault(); // Prevents the default form submission
-        } else {
-          alert("Invalid Tracking Number") /*displays error message*/
-          event.preventDefault(); // Prevents the default form submission
-          return false;
-        }
+      <script language="javascript">
+    function check(form) /*function to check userid & password*/ {
+      /*the following code checks whether the entered userid and password are matching*/
+      if (form.pass.value === "010154788640") {
+        location.href = "tracking.html";
+        event.preventDefault(); // Prevents the default form submission
+      } else if (form.pass.value === "JJD1234567890123") {
+        location.href = "processingtracing.html";
+        event.preventDefault(); // Prevents the default form submission
+      } else if (form.pass.value === "9272937") {
+        location.href = "Track-shipment.html";
+        event.preventDefault(); // Prevents the default form submission
+      } else {
+        alert("Invalid Tracking Number") /*displays error message*/
+        event.preventDefault(); // Prevents the default form submission
+        return false;
       }
-    </script>
+    }
+  </script>
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
           <div class="site-mobile-menu-close mt-3">
