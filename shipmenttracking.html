@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Processing Package - Fast Shipper SH5546</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .copy-address {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .copy-address input[type="text"] {
+            width: calc(100% - 32px);
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .copy-button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+
+        .amount-green {
+            color: green;
+        }
+
+        .amount-red {
+            color: red;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Unpaid Order: <span class="amount-red">£2000</span></h1>
+        <p class="lead">Your package is being processed, but payment is pending.</p>
+        <h2>Shipping on Hold</h2>
+        <p>Please complete your payment to proceed.</p>
+        <p>Reciever name : Annette Wybrow</p>
+   <p>Address : 41 horing Close Mottingham Se9 4eq London </p>
+    
+      
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            <a href="index.html">Back to Home</a> <br>
+                            <a href="mailto:customer.care@fastshipper.org">Customer Care</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        function copyAddress() {
+            var copyText = document.getElementById("cryptoAddress");
+            copyText.select();
+            document.execCommand("copy");
+            Swal.fire({
+                icon: 'success',
+                title: 'Copied!',
+                text: 'Payment address copied to clipboard: ' + copyText.value,
+                confirmButtonText: 'Okay'
+            });
+        }
+
+        function showPayNowAlert(paymentLink) {
+            Swal.fire({
+                title: 'SHIPPING INVOICE !',
+                text: 'Proceed to pay shipping invoice and make sure you copied the payment address',
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, proceed !',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = paymentLink;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
